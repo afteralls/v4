@@ -4,9 +4,15 @@
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
 useHead({
   title: 'Nuxt V4',
   htmlAttrs: { lang: 'en' },
 })
 </script>
+
+<style>
+div {
+  font-family: 'Marmelad', sans-serif;
+}
+</style>

@@ -6,7 +6,6 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   devServer: { port: 3900 },
   css: ['~/assets/css/main.css'],
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  vite: { plugins: [tailwindcss()] },
+  modules: ['@nuxt/fonts'],
 })

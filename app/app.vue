@@ -1,6 +1,7 @@
 <template>
-  <div class="text-[5rem] bg-green-300 text-shadow-green-700 max-md:text-[2rem]">
-    <h1>Nuxt v4 SSR Performance Test</h1>
+  <div class="flex flex-col gap-3 w-dvw h-dvh bg-green-300 text-shadow-green-700">
+    <h1 class="text-[5rem] max-md:text-[2rem]">Nuxt v4 SSR Performance Test</h1>
+    <span class="text-[2rem] max-md:text-[1rem]">with @nuxt/fonts & Tailwind v4</span>
   </div>
 </template>
 
@@ -8,13 +9,16 @@
 useHead({
   title: 'Nuxt V4',
   htmlAttrs: { lang: 'en' },
-  meta: [{ name: 'description', content: 'Just Nuxt v4 + Tailwind v4 Test project' }],
+  meta: [
+    { name: 'description', content: 'Just Nuxt v4 + Tailwind v4 Test project' },
+    { name: 'theme-color', content: '#7bf1a7' },
+  ],
 })
 </script>
 
 <style>
 div {
   font-family: 'Marmelad', sans-serif;
-  @apply flex text-center justify-center items-center w-dvw h-dvh;
+  @apply text-center justify-center items-center;
 }
 </style>

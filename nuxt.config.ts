@@ -6,11 +6,6 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   devServer: { port: 3900 },
   css: ['~/assets/css/main.css'],
-  app: {
-    head: {
-      title: 'Nuxt v4',
-    },
-  },
   vite: {
     plugins: [tailwindcss()],
   },

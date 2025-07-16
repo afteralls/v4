@@ -3,3 +3,10 @@
     <h1>Nuxt v4 SSR Performance Test</h1>
   </div>
 </template>
+
+<script>
+useHead({
+  title: 'Nuxt V4',
+  htmlAttrs: { lang: 'en' },
+})
+</script>
